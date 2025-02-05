@@ -1,0 +1,22 @@
+{
+  "name": "stompy-stamper",
+  "version": "0.0.9",
+  "description": "Tools to use rubber stamps with the Bantam ArtFrame",
+  "main": "README.md",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "generativeart",
+    "penplotter"
+  ],
+  "author": "revdancatt",
+  "license": "ISC",
+  "devDependencies": {
+    "standard": "^17.1.2"
+  },
+  "dependencies": {
+    "skia-canvas": "^2.0.2"
+  }
+}
