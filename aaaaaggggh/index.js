@@ -10,8 +10,8 @@ const outputDir = path.join(__dirname, 'output')
 if (!fs.existsSync(outputDir)) fs.mkdirSync(outputDir)
 
 // Set the width and height of the paper
-const width = 758
-const height = 567
+const width = 297
+const height = 210
 
 // Set the size of the stamp
 const stampSize = 20
@@ -23,22 +23,22 @@ let stamps = []
 
 // Now we want the borders
 const borders = {
-  top: 50,
-  bottom: 50,
-  left: 45,
-  right: 50
+  top: 20,
+  bottom: 20,
+  left: 20,
+  right: 20
 }
 
 const inkPosition = {
-  left: 771,
-  right: 847,
+  left: 315,
+  right: 390,
   top: 54,
   bottom: 6
 }
 
 const stampUpHeight = 60
-const stampDownHeight = 8
-const stampInkHeight = 22
+const stampDownHeight = 18
+const stampInkHeight = 32
 
 // Now we are going to have a couple of loops so we can move the stamps through the space, and add them to the array
 let currentX = borders.left + (stampSize / 2)
@@ -47,8 +47,8 @@ let currentY = borders.top + (stampSize / 2)
 const bottomEdge = height - (borders.bottom + (stampSize / 2))
 const rightEdge = width - (borders.right + (stampSize / 2))
 
-const waveOneOffset = Math.random() * 100 + 100
-const waveTwoOffset = Math.random() * 100 + 100
+const waveOneOffset = Math.random() * 1000 + 1000
+const waveTwoOffset = Math.random() * 1000 + 1000
 
 let counter = Math.floor(Math.random() * 1000) + 1000
 while (currentY < bottomEdge) {

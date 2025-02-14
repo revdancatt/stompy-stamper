@@ -130,3 +130,5 @@ dist
 .pnp.*
 /.DS_Store
 aaaaaggggh/output
+/love-notes/output/.DS_Store
+*/output
