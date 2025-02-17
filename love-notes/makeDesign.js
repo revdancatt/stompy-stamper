@@ -223,7 +223,7 @@ for (let i = 0; i < letterList.length; i++) {
 
         if (toStamp.reInk) ink(inkX, inkY)
         stamp(toStamp.x, height - toStamp.y)
-        if (toStamp.doubleTap) stamp(inkX, inkY)
+        if (toStamp.doubleTap) stamp(toStamp.x + 0.01, height - toStamp.y)
 
         // Lighten the colour for the second stamp
         ctx.fillStyle = `hsla(${hue}, 100%, 50%, 0.8)`
