@@ -1,0 +1,343 @@
+{
+  "size": {
+    "width": 10,
+    "height": 10
+  },
+  "glyphs": {
+    "A": {
+      "width": 6.2,
+      "xNudge": 0,
+      "yNudge": 0
+    },
+    "B": {
+      "width": 5.2,
+      "xNudge": 0,
+      "yNudge": 0
+    },
+    "C": {
+      "width": 5.3,
+      "xNudge": 0,
+      "yNudge": -0.05
+    },
+    "D": {
+      "width": 6.5,
+      "xNudge": 0,
+      "yNudge": 0
+    },
+    "E": {
+      "width": 5.3,
+      "xNudge": 0,
+      "yNudge": 0
+    },
+    "F": {
+      "width": 5.2,
+      "xNudge": 0,
+      "yNudge": 0
+    },
+    "G": {
+      "width": 6.4,
+      "xNudge": 0,
+      "yNudge": 0
+    },
+    "H": {
+      "width": 6.4,
+      "xNudge": 0,
+      "yNudge": 0
+    },
+    "I": {
+      "width": 4.8,
+      "xNudge": 0,
+      "yNudge": 0
+    },
+    "J": {
+      "width": 3.9,
+      "xNudge": 0,
+      "yNudge": 0
+    },
+    "K": {
+      "width": 5,
+      "xNudge": 0,
+      "yNudge": 0
+    },
+    "L": {
+      "width": 5,
+      "xNudge": 0,
+      "yNudge": 0
+    },
+    "M": {
+      "width": 7.5,
+      "xNudge": 0,
+      "yNudge": 0
+    },
+    "N": {
+      "width": 6.3,
+      "xNudge": 0,
+      "yNudge": 0
+    },
+    "O": {
+      "width": 5.8,
+      "xNudge": 0,
+      "yNudge": 0
+    },
+    "P": {
+      "width": 4.9,
+      "xNudge": 0,
+      "yNudge": 0
+    },
+    "Q": {
+      "width": 6,
+      "xNudge": 0,
+      "yNudge": 0
+    },
+    "R": {
+      "width": 6,
+      "xNudge": 0,
+      "yNudge": -0.1
+    },
+    "S": {
+      "width": 4.8,
+      "xNudge": 0,
+      "yNudge": 0
+    },
+    "T": {
+      "width": 5.9,
+      "xNudge": 0,
+      "yNudge": -0.05
+    },
+    "U": {
+      "width": 5,
+      "xNudge": 0,
+      "yNudge": 0
+    },
+    "V": {
+      "width": 6.3,
+      "xNudge": 0,
+      "yNudge": 0
+    },
+    "W": {
+      "width": 8,
+      "xNudge": 0,
+      "yNudge": 0
+    },
+    "X": {
+      "width": 6.2,
+      "xNudge": 0,
+      "yNudge": 0
+    },
+    "Y": {
+      "width": 6.1,
+      "xNudge": 0,
+      "yNudge": 0
+    },
+    "Z": {
+      "width": 5.8,
+      "xNudge": 0,
+      "yNudge": 0
+    },
+    "a": {
+      "width": 8,
+      "xNudge": 0,
+      "yNudge": 0
+    },
+    "b": {
+      "width": 8,
+      "xNudge": 0,
+      "yNudge": 0
+    },
+    "c": {
+      "width": 8,
+      "xNudge": 0,
+      "yNudge": 0
+    },
+    "d": {
+      "width": 8,
+      "xNudge": 0,
+      "yNudge": 0
+    },
+    "e": {
+      "width": 8,
+      "xNudge": 0,
+      "yNudge": 0
+    },
+    "f": {
+      "width": 8,
+      "xNudge": 0,
+      "yNudge": 0
+    },
+    "g": {
+      "width": 8,
+      "xNudge": 0,
+      "yNudge": 0
+    },
+    "h": {
+      "width": 8,
+      "xNudge": 0,
+      "yNudge": 0
+    },
+    "i": {
+      "width": 8,
+      "xNudge": 0,
+      "yNudge": 0
+    },
+    "j": {
+      "width": 8,
+      "xNudge": 0,
+      "yNudge": 0
+    },
+    "k": {
+      "width": 8,
+      "xNudge": 0,
+      "yNudge": 0
+    },
+    "l": {
+      "width": 8,
+      "xNudge": 0,
+      "yNudge": 0
+    },
+    "m": {
+      "width": 8,
+      "xNudge": 0,
+      "yNudge": 0
+    },
+    "n": {
+      "width": 8,
+      "xNudge": 0,
+      "yNudge": 0
+    },
+    "o": {
+      "width": 8,
+      "xNudge": 0,
+      "yNudge": 0
+    },
+    "p": {
+      "width": 8,
+      "xNudge": 0,
+      "yNudge": 0
+    },
+    "q": {
+      "width": 8,
+      "xNudge": 0,
+      "yNudge": 0
+    },
+    "r": {
+      "width": 8,
+      "xNudge": 0,
+      "yNudge": 0
+    },
+    "s": {
+      "width": 8,
+      "xNudge": 0,
+      "yNudge": 0
+    },
+    "t": {
+      "width": 8,
+      "xNudge": 0,
+      "yNudge": 0
+    },
+    "u": {
+      "width": 8,
+      "xNudge": 0,
+      "yNudge": 0
+    },
+    "v": {
+      "width": 8,
+      "xNudge": 0,
+      "yNudge": 0
+    },
+    "w": {
+      "width": 8,
+      "xNudge": 0,
+      "yNudge": 0
+    },
+    "x": {
+      "width": 8,
+      "xNudge": 0,
+      "yNudge": 0
+    },
+    "y": {
+      "width": 8,
+      "xNudge": 0,
+      "yNudge": 0
+    },
+    "z": {
+      "width": 8,
+      "xNudge": 0,
+      "yNudge": 0
+    },
+    "0": {
+      "width": 8,
+      "xNudge": 0,
+      "yNudge": 0
+    },
+    "1": {
+      "width": 8,
+      "xNudge": 0,
+      "yNudge": 0
+    },
+    "2": {
+      "width": 8,
+      "xNudge": 0,
+      "yNudge": 0
+    },
+    "3": {
+      "width": 8,
+      "xNudge": 0,
+      "yNudge": 0
+    },
+    "4": {
+      "width": 8,
+      "xNudge": 0,
+      "yNudge": 0
+    },
+    "5": {
+      "width": 8,
+      "xNudge": 0,
+      "yNudge": 0
+    },
+    "6": {
+      "width": 8,
+      "xNudge": 0,
+      "yNudge": 0
+    },
+    "7": {
+      "width": 8,
+      "xNudge": 0,
+      "yNudge": 0
+    },
+    "8": {
+      "width": 8,
+      "xNudge": 0,
+      "yNudge": 0
+    },
+    "9": {
+      "width": 8,
+      "xNudge": 0,
+      "yNudge": 0
+    },
+    "&": {
+      "width": 6.4,
+      "xNudge": 0,
+      "yNudge": 0
+    },
+    ".": {
+      "width": 3,
+      "xNudge": 0,
+      "yNudge": 0
+    },
+    "!": {
+      "width": 8,
+      "xNudge": 0,
+      "yNudge": 0
+    },
+    "?": {
+      "width": 8,
+      "xNudge": 0,
+      "yNudge": 0
+    },
+    " ": {
+      "width": 10,
+      "xNudge": 0,
+      "yNudge": 0
+    }
+  }
+}

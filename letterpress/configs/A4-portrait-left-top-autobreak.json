@@ -1,0 +1,26 @@
+{
+  "width": 210,
+  "height": 297,
+  "border": {
+    "top": 20,
+    "bottom": 30,
+    "left": 20,
+    "right": 20
+  },
+  "hAlign": "center",
+  "vAlign": "fill",
+  "autobreak": true,
+  "lineHeight": 1.2,
+  "autofillVerticalSpace": false,
+  "shimmy": 0,
+  "inkPosition": {
+    "left": 822,
+    "right": 902,
+    "top": 330,
+    "bottom": 280
+  },
+  "rotated": true,
+  "setStampUpHeight": 60,
+  "setStampDownHeight": 35,
+  "stampInkHeight": 49
+}

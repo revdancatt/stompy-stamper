@@ -21,8 +21,8 @@ const width = 297
 const height = 210
 
 // Set the size of the stamp
-const stampSize = 20
-const lineHeight = stampSize * 0.666
+const stampSize = 15
+const lineHeight = stampSize * 0.8
 const stampOffset = stampSize * 0.333
 
 // We are going to hold an array of the stamps, lines at a time
@@ -30,17 +30,17 @@ const stamps = []
 
 // Now we want the borders
 const borders = {
-  top: 10,
-  bottom: 10,
-  left: 10,
-  right: 10
+  top: 8,
+  bottom: 8,
+  left: 8,
+  right: 8
 }
 
 const inkPosition = {
-  left: 318,
-  right: 391,
-  top: 42,
-  bottom: 6
+  left: 390,
+  right: 468,
+  top: 128,
+  bottom: 80
 }
 
 const stampUpHeight = 60
@@ -116,6 +116,19 @@ for (let i = 0; i < letterList.length; i++) {
     }
   }
 }
+
+// Reorder letterList to match the order of letters in the original word
+const reorderedLetterList = []
+// First add letters from the word
+for (let i = 0; i < word.length; i++) {
+  const letter = word[i]
+  if (!reorderedLetterList.includes(letter)) {
+    reorderedLetterList.push(letter)
+  }
+}
+letterList.length = 0
+letterList.push(...reorderedLetterList)
+
 // Now we want to force a few letters into the line that is one-third down the page
 // so lets work out which line that is
 const oneThirdLineIndex = Math.floor(stamps.length / 3)
@@ -128,7 +141,9 @@ const padding = 4
 const wordLength = word.length
 const startPosition = oneThirdLine.length - (wordLength + padding)
 
+console.log('Replacing on line: ', oneThirdLineIndex)
 for (let i = 0; i < wordLength; i++) {
+  console.log(startPosition + i, word[i])
   stamps[oneThirdLineIndex][startPosition + i].letter = word[i]
   // Always re-ink the stamp for the main word
   stamps[oneThirdLineIndex][startPosition + i].reInk = true
@@ -138,6 +153,26 @@ for (let i = 0; i < wordLength; i++) {
 // Set reink to false for the letters before and after the main word
 stamps[oneThirdLineIndex][startPosition - 1].reInk = false
 stamps[oneThirdLineIndex][startPosition + wordLength].reInk = false
+
+// loop through the stamps
+for (let i = 0; i < stamps.length; i++) {
+  const line = stamps[i]
+  let thisLine = ''
+  for (let j = 0; j < line.length; j++) {
+    thisLine += line[j].letter
+  }
+  console.log(thisLine.length + ' :: ' + thisLine)
+}
+
+const installTool = (index, name) => {
+  gcode += `G0 Z${stampUpHeight}
+( Install Tool: ${index}. Layer: ${name} )
+G0 X0 Y0
+G0 Z${stampUpHeight}
+M0
+( CLEAR )
+`
+}
 
 const ink = (x, y) => {
   gcode += `( ink )
@@ -157,16 +192,6 @@ G0 Z${stampUpHeight}
 `
 }
 
-const installTool = (index, name) => {
-  gcode += `G0 Z${stampUpHeight}
-( Install Tool: ${index}. Layer: ${name} )
-G0 X0 Y0
-G0 Z${stampUpHeight}
-M0
-( CLEAR )
-`
-}
-
 const end = () => {
   gcode += `( end )
 G0 Z${stampUpHeight}
@@ -183,7 +208,7 @@ inkPosition.inkRange = {
   bottom: inkPosition.bottom + stampSize * 0.75
 }
 
-// Now we need to construct the GCODE
+// Start constructing the GCODE
 let gcode = `( GCode File Generated with love on : ${new Date().toString()} )
 ( Target Machine: ArtFrame 2436 )
 ( Margins[LRTB]: 0, 0, 0, 0 )
@@ -195,6 +220,7 @@ let gcode = `( GCode File Generated with love on : ${new Date().toString()} )
 ( AccelX: 3000 )
 ( AccelY: 3000 )
 G90\n`
+
 const canvas = new Canvas(width, height)
 const ctx = canvas.getContext('2d')
 // Fill the canvas with white
